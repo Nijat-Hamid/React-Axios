@@ -1,0 +1,11 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react-swc'
+import eslintPlugin from "@nabla/vite-plugin-eslint";
+
+
+export default defineConfig({
+  plugins: [react(),eslintPlugin()],
+  server: {
+    open: true,
+  },
+})

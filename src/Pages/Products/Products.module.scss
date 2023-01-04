@@ -1,0 +1,95 @@
+.heading{
+    text-align: center;
+    font-weight: 700;
+    color: #f2aa4c;
+    padding-bottom: 100px;
+}
+#product_api{
+    min-height: 85vh;
+}
+.card {
+  position: relative;
+  height : 170px;  
+  background-color : transparent;
+  margin : 30px 10px;
+  padding : 20px 15px;
+  cursor: pointer;
+  transition : .4s all ease;
+  border-radius : 15px;
+}
+.card:hover {
+  height : 320px;    
+  background-color: #fff;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+}
+.card .image {
+  position : relative;
+  height : 170px;
+  top : -30%;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+  border-radius : 15px;
+}
+.card .image img {
+  width : 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius : 15px;
+  overflow: hidden;
+}
+.card .content {
+  position : relative;
+  top : -110px;
+  padding : 10px 15px;
+  color : #111;  
+  visibility : hidden;
+  opacity : 0;
+  transition : .4s all ease;
+  pointer-events: none;
+}
+.card:hover .content {
+   margin-top : 30px;
+   visibility : visible;
+   opacity : 1;
+   pointer-events: all;
+}
+.card_title{
+    text-align: center;
+    font-size: 16px;
+    color: #272643;
+    font-weight: 600;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden ;
+}
+.card_desc{
+    text-align: center;
+    font-size: 14px;
+    color: #1e1d36;
+    font-weight: 400;
+    height: 45px;
+    padding-bottom: 18px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow:ellipsis;
+    white-space:normal;
+    overflow:hidden;
+    line-clamp: 2;
+    
+}
+.card_price,
+.card_brand{
+    margin-top: 8px;
+    font-size: 14px;
+    color: #1e1d36;
+    font-weight: 400;
+}
+.card_stock,
+.card_category{
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    color: #1e1d36;
+    font-weight: 400;
+}
